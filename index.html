@@ -1,0 +1,1409 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星空丶糖果_星空糖果原创视频_星空糖果官方社区</title>
+<meta name="description" content="星空丶糖果官方网站，专注星空糖果原创视频内容生态，汇聚创作者、糖果手作、星空影像与社区互动，提供高清正版精品内容与持续运营的品牌社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1b2f'/%3E%3Ccircle cx='20' cy='18' r='3' fill='%23ffd166'/%3E%3Ccircle cx='44' cy='14' r='2' fill='%23ffd166'/%3E%3Ccircle cx='52' cy='34' r='2.5' fill='%23ffd166'/%3E%3Ccircle cx='14' cy='40' r='2' fill='%23ffd166'/%3E%3Cpath d='M32 22c5 8 10 10 10 18a10 10 0 0 1-20 0c0-8 5-10 10-18z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --sk-night:#12122a;
+    --sk-night-2:#1b1b3a;
+    --sk-deep:#0d0d20;
+    --sk-gold:#ffd166;
+    --sk-gold-deep:#f5a623;
+    --sk-lilac:#b8a9ff;
+    --sk-cyan:#8fe3ff;
+    --sk-rose:#ff9ec4;
+    --sk-ink:#20203c;
+    --sk-text:#33334f;
+    --sk-muted:#6c6c85;
+    --sk-card:#ffffff;
+    --sk-soft:#f4f2ff;
+    --sk-line:#e5e2f5;
+    --sk-shadow:0 10px 30px rgba(30,24,80,.10);
+    --sk-radius:18px;
+    --sk-header-h:112px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:var(--sk-header-h)}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    color:var(--sk-text);
+    background:linear-gradient(180deg,#faf9ff 0%,#f2f0fd 40%,#fbfaff 100%);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  .sk-wrap{width:min(1180px,92%);margin:0 auto}
+  .sk-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+  /* ===== 公告条 + 页头 吸顶 ===== */
+  .sk-sticky{position:sticky;top:0;z-index:60}
+  .sk-notice{
+    background:linear-gradient(90deg,#1b1b3a,#2a2461 55%,#1b1b3a);
+    color:#efeaff;
+    font-size:13.5px;
+    letter-spacing:.2px;
+  }
+  .sk-notice-inner{
+    display:flex;align-items:center;gap:12px;
+    padding:9px 0;min-height:42px;
+  }
+  .sk-notice-tag{
+    flex:0 0 auto;background:var(--sk-gold);color:#241c00;
+    font-weight:700;font-size:12px;padding:2px 10px;border-radius:999px;letter-spacing:1px;
+  }
+  .sk-notice-list{
+    display:flex;gap:26px;overflow:hidden;white-space:nowrap;
+    mask-image:linear-gradient(90deg,transparent,#000 4%,#000 92%,transparent);
+  }
+  .sk-notice-list span{display:inline-flex;gap:8px;align-items:center}
+  .sk-notice-list span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--sk-lilac);flex:0 0 auto}
+  .sk-notice-list b{color:var(--sk-gold);font-weight:600}
+
+  .sk-header{
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--sk-line);
+    box-shadow:0 4px 18px rgba(30,24,80,.05);
+  }
+  .sk-header-inner{
+    display:flex;align-items:center;gap:22px;
+    min-height:70px;
+  }
+  .sk-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+  .sk-brand-mark{width:40px;height:40px;flex:0 0 auto}
+  .sk-brand-name{font-size:19px;font-weight:800;color:var(--sk-ink);letter-spacing:.5px;line-height:1.2}
+  .sk-brand-sub{font-size:11px;color:var(--sk-muted);letter-spacing:2.6px}
+  .sk-nav{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
+  .sk-nav a{
+    font-size:14.5px;padding:7px 13px;border-radius:10px;color:#3d3d5c;
+    transition:background .2s,color .2s;font-weight:500;
+  }
+  .sk-nav a:hover{background:var(--sk-soft);color:#5a3fd6}
+  .sk-search{
+    margin-left:auto;display:flex;align-items:center;gap:8px;
+    background:var(--sk-soft);border:1px solid var(--sk-line);
+    border-radius:12px;padding:6px 6px 6px 14px;min-width:250px;
+    transition:border-color .2s,box-shadow .2s;
+  }
+  .sk-search:focus-within{border-color:var(--sk-lilac);box-shadow:0 0 0 3px rgba(184,169,255,.25)}
+  .sk-search input{
+    border:none;background:none;outline:none;font-size:14px;width:100%;color:var(--sk-text);
+  }
+  .sk-search button{
+    background:linear-gradient(135deg,#6a4bff,#9a6bff);color:#fff;
+    font-size:13px;padding:6px 14px;border-radius:9px;font-weight:600;white-space:nowrap;
+  }
+  .sk-search-feedback{
+    position:absolute;margin-top:78px;right:4%;width:min(340px,88vw);
+    background:#fff;border:1px solid var(--sk-line);border-radius:14px;
+    box-shadow:var(--sk-shadow);padding:12px 16px;font-size:13px;color:var(--sk-muted);
+    display:none;z-index:70;
+  }
+  .sk-search-feedback.on{display:block}
+  .sk-search-feedback b{color:#6a4bff}
+  .sk-menu-btn{display:none;width:42px;height:42px;border-radius:10px;background:var(--sk-soft);align-items:center;justify-content:center}
+  .sk-menu-btn span{display:block;width:18px;height:2px;background:var(--sk-ink);position:relative}
+  .sk-menu-btn span::before,.sk-menu-btn span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--sk-ink)}
+  .sk-menu-btn span::before{top:-6px}
+  .sk-menu-btn span::after{top:6px}
+
+  /* ===== 通用区块 ===== */
+  .sk-section{padding:64px 0}
+  .sk-section-alt{background:linear-gradient(180deg,#f6f3ff,#fdfbff)}
+  .sk-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12.5px;letter-spacing:3px;color:#7b5cff;font-weight:700;margin-bottom:10px;
+  }
+  .sk-eyebrow::before{content:"";width:22px;height:2px;background:linear-gradient(90deg,#7b5cff,transparent)}
+  .sk-h2{
+    font-size:clamp(24px,3vw,32px);line-height:1.35;color:var(--sk-ink);
+    letter-spacing:.5px;margin-bottom:12px;font-weight:800;
+  }
+  .sk-h2 em{font-style:normal;color:#7b5cff}
+  .sk-lead{color:var(--sk-muted);font-size:15px;max-width:760px}
+  .sk-sec-head{margin-bottom:34px}
+  .sk-h3{font-size:18.5px;color:var(--sk-ink);font-weight:700;line-height:1.5;margin-bottom:8px}
+
+  /* ===== 首屏（左文右侧大图与数据条） ===== */
+  .sk-hero{
+    position:relative;overflow:hidden;
+    background:
+      radial-gradient(900px 420px at 82% -10%,rgba(143,227,255,.28),transparent 60%),
+      radial-gradient(700px 380px at 8% 110%,rgba(255,158,196,.22),transparent 60%),
+      linear-gradient(135deg,#12122a 0%,#1b1b3a 48%,#221a4a 100%);
+    color:#eeeafc;
+  }
+  .sk-hero::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:radial-gradient(2px 2px at 20% 30%,rgba(255,255,255,.85),transparent),
+      radial-gradient(1.6px 1.6px at 62% 18%,rgba(255,209,102,.9),transparent),
+      radial-gradient(1.6px 1.6px at 84% 62%,rgba(255,255,255,.7),transparent),
+      radial-gradient(1.4px 1.4px at 36% 78%,rgba(184,169,255,.9),transparent),
+      radial-gradient(1.4px 1.4px at 74% 88%,rgba(255,255,255,.6),transparent);
+    opacity:.75;
+  }
+  .sk-hero-grid{
+    position:relative;z-index:2;
+    display:grid;grid-template-columns:minmax(0,5fr) minmax(0,5fr);
+    gap:46px;align-items:center;padding:58px 0 62px;
+  }
+  .sk-hero-badge{
+    display:inline-flex;align-items:center;gap:9px;
+    border:1px solid rgba(255,209,102,.45);color:var(--sk-gold);
+    font-size:12.5px;letter-spacing:1.5px;padding:5px 14px;border-radius:999px;
+    background:rgba(255,209,102,.08);margin-bottom:20px;font-weight:600;
+  }
+  .sk-hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--sk-gold);box-shadow:0 0 10px var(--sk-gold);font-style:normal}
+  .sk-hero h1{
+    font-size:clamp(30px,4.4vw,46px);line-height:1.22;letter-spacing:1px;
+    color:#fff;font-weight:900;margin-bottom:14px;
+  }
+  .sk-hero h1 span{
+    background:linear-gradient(100deg,#ffd166,#ffb0d8 60%,#b8a9ff);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .sk-hero-slogan{font-size:16px;color:#c8c3ea;margin-bottom:18px;letter-spacing:.6px}
+  .sk-hero-intro{font-size:14.5px;line-height:1.95;color:#b7b2d8;margin-bottom:26px;max-width:520px}
+  .sk-hero-intro strong{color:#fff;font-weight:600}
+  .sk-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
+  .sk-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:14.5px;font-weight:600;padding:12px 24px;border-radius:12px;
+    transition:transform .2s,box-shadow .2s,background .2s;line-height:1;
+  }
+  .sk-btn:hover{transform:translateY(-2px)}
+  .sk-btn-primary{
+    background:linear-gradient(135deg,#ffd166,#f5a623);color:#241c00;
+    box-shadow:0 8px 22px rgba(245,166,35,.32);
+  }
+  .sk-btn-ghost{border:1px solid rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.06)}
+  .sk-btn-ghost:hover{background:rgba(255,255,255,.14)}
+  .sk-btn-line{border:1px solid #cfc7ff;color:#5a3fd6;background:#fff;font-size:14px;padding:10px 20px}
+  .sk-hero-stats{
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
+    border-top:1px solid rgba(255,255,255,.14);padding-top:22px;
+  }
+  .sk-hero-stats div b{display:block;font-size:24px;color:var(--sk-gold);font-weight:800;letter-spacing:.5px;line-height:1.3}
+  .sk-hero-stats div small{font-size:12.5px;color:#a8a3cc;letter-spacing:.5px}
+  .sk-hero-visual{position:relative}
+  .sk-hero-visual figure{
+    border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.18);
+    box-shadow:0 30px 70px rgba(0,0,0,.45);
+  }
+  .sk-hero-visual figcaption{
+    margin-top:12px;font-size:12.5px;color:#9c97c4;letter-spacing:.5px;text-align:right;
+  }
+  .sk-hero-chip{
+    position:absolute;left:-14px;bottom:38px;
+    background:rgba(255,255,255,.96);color:var(--sk-ink);
+    border-radius:14px;padding:10px 16px;font-size:12.5px;font-weight:600;
+    box-shadow:0 14px 30px rgba(0,0,0,.3);display:flex;align-items:center;gap:9px;
+  }
+  .sk-hero-chip i{
+    width:9px;height:9px;border-radius:50%;background:#3ecf8e;box-shadow:0 0 0 4px rgba(62,207,142,.18);font-style:normal;
+  }
+
+  /* ===== 内容入口 / 焦点+视频流（一幅重点大图 + 文字列表） ===== */
+  .sk-focus-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:34px;align-items:start}
+  .sk-focus-card{
+    background:var(--sk-card);border-radius:var(--sk-radius);overflow:hidden;
+    box-shadow:var(--sk-shadow);border:1px solid var(--sk-line);
+    transition:transform .25s,box-shadow .25s;
+  }
+  .sk-focus-card:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(40,28,110,.16)}
+  .sk-focus-thumb{position:relative;aspect-ratio:16/9;overflow:hidden}
+  .sk-focus-thumb img{width:100%;height:100%;object-fit:cover}
+  .sk-play{
+    position:absolute;left:16px;bottom:16px;
+    width:46px;height:46px;border-radius:50%;
+    background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+  }
+  .sk-play::before{content:"";border-left:14px solid #2a1a6b;border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+  .sk-focus-tag{
+    position:absolute;left:16px;top:16px;background:rgba(18,18,42,.82);color:var(--sk-gold);
+    font-size:12px;padding:4px 12px;border-radius:999px;letter-spacing:1px;font-weight:600;
+  }
+  .sk-focus-body{padding:20px 22px 22px}
+  .sk-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--sk-muted);margin-top:6px}
+  .sk-meta b{color:#6a4bff;font-weight:600}
+  .sk-focus-body p{font-size:14.5px;color:var(--sk-muted);margin-top:10px}
+
+  .sk-vlist{display:flex;flex-direction:column;gap:0;background:#fff;border:1px solid var(--sk-line);border-radius:var(--sk-radius);overflow:hidden;box-shadow:var(--sk-shadow)}
+  .sk-vitem{
+    display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:14px;align-items:start;
+    padding:18px 20px;border-bottom:1px dashed var(--sk-line);transition:background .2s;
+  }
+  .sk-vitem:last-child{border-bottom:none}
+  .sk-vitem:hover{background:#faf8ff}
+  .sk-vnum{
+    font-size:16px;font-weight:800;color:#cfc7ff;font-style:italic;line-height:1.5;
+  }
+  .sk-vitem:nth-child(1) .sk-vnum{color:#ffb703}
+  .sk-vitem:nth-child(2) .sk-vnum{color:#9a8cff}
+  .sk-vitem:nth-child(3) .sk-vnum{color:#7ad3ff}
+  .sk-vtags{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .sk-tag{
+    font-size:11.5px;padding:2px 9px;border-radius:999px;
+    background:var(--sk-soft);color:#6a4bff;letter-spacing:.4px;
+  }
+  .sk-tag-rose{background:#fff0f6;color:#d4398b}
+  .sk-tag-cyan{background:#eafaff;color:#1c7a99}
+  .sk-vitem p{font-size:13.5px;color:var(--sk-muted);margin-top:7px}
+  .sk-vdata{display:flex;flex-direction:column;gap:6px;align-items:flex-end;font-size:12.5px;color:var(--sk-muted)}
+  .sk-vdata button{
+    font-size:12px;padding:4px 11px;border-radius:8px;border:1px solid var(--sk-line);
+    color:#5a3fd6;background:#fff;transition:.2s;font-weight:600;
+  }
+  .sk-vdata button:hover{background:#f1ecff;border-color:#cfc7ff}
+  .sk-vdata button.on{background:#6a4bff;color:#fff;border-color:#6a4bff}
+
+  /* ===== 专题 ===== */
+  .sk-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+  .sk-topic{
+    background:#fff;border-radius:var(--sk-radius);padding:24px 22px;
+    border:1px solid var(--sk-line);box-shadow:var(--sk-shadow);
+    display:flex;flex-direction:column;gap:12px;
+    transition:transform .25s,border-color .25s;
+  }
+  .sk-topic:hover{transform:translateY(-4px);border-color:#cfc7ff}
+  .sk-topic-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .sk-status{
+    font-size:11.5px;padding:3px 10px;border-radius:999px;font-weight:600;letter-spacing:.4px;
+    background:#eefbf4;color:#1c8a5c;white-space:nowrap;
+  }
+  .sk-status.pause{background:#fff6e6;color:#b87700}
+  .sk-status.done{background:#f2f1fb;color:#6a6485}
+  .sk-topic ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:2px}
+  .sk-topic ul li{
+    font-size:13.5px;color:var(--sk-muted);padding-left:16px;position:relative;line-height:1.65;
+  }
+  .sk-topic ul li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:2px;background:#cfc7ff;transform:rotate(45deg)}
+  .sk-topic-img{border-radius:12px;overflow:hidden;aspect-ratio:16/9}
+  .sk-topic-img img{width:100%;height:100%;object-fit:cover}
+
+  /* ===== 关键词解析（深度解析） ===== */
+  .sk-parse{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+  .sk-parse-card{
+    background:#fff;border:1px solid var(--sk-line);border-radius:var(--sk-radius);
+    padding:26px 26px 22px;box-shadow:var(--sk-shadow);
+  }
+  .sk-parse p{font-size:14.5px;color:#4a4a68;margin-bottom:14px;line-height:1.95}
+  .sk-parse p strong{color:#4b2fd0;font-weight:700}
+  .sk-hl{
+    background:linear-gradient(180deg,transparent 62%,rgba(255,209,102,.55) 62%);
+    font-weight:700;color:#2b2b48;
+  }
+  .sk-quote{
+    margin-top:18px;padding:18px 20px;border-left:4px solid #9a6bff;
+    background:var(--sk-soft);border-radius:0 14px 14px 0;
+    font-size:14px;color:#4a3f8f;font-style:normal;
+  }
+
+  /* ===== 数据条 ===== */
+  .sk-metrics{
+    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;
+  }
+  .sk-metric{
+    background:#fff;border:1px solid var(--sk-line);border-radius:16px;
+    padding:20px 18px;text-align:center;box-shadow:var(--sk-shadow);
+  }
+  .sk-metric b{display:block;font-size:26px;font-weight:800;color:#4b2fd0;line-height:1.3}
+  .sk-metric small{font-size:12.5px;color:var(--sk-muted);letter-spacing:.4px}
+
+  /* ===== 作者区（双列简介） ===== */
+  .sk-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  .sk-author{
+    display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;
+    background:#fff;border:1px solid var(--sk-line);border-radius:var(--sk-radius);
+    padding:22px;box-shadow:var(--sk-shadow);transition:transform .25s;
+  }
+  .sk-author:hover{transform:translateY(-3px)}
+  .sk-avatar{
+    width:64px;height:64px;border-radius:50%;overflow:hidden;flex:0 0 auto;
+    display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:800;color:#fff;
+  }
+  .sk-av-a{background:linear-gradient(135deg,#6a4bff,#b8a9ff)}
+  .sk-av-b{background:linear-gradient(135deg,#f5a623,#ffd166);color:#3a2600}
+  .sk-av-c{background:linear-gradient(135deg,#1c9fd6,#8fe3ff);color:#082c3a}
+  .sk-av-d{background:linear-gradient(135deg,#d4398b,#ff9ec4)}
+  .sk-av-e{background:linear-gradient(135deg,#2b9c6e,#a8f0cf);color:#0b3524}
+  .sk-author-name{font-size:16.5px;font-weight:800;color:var(--sk-ink);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .sk-author-name span{font-size:11.5px;color:#6a4bff;background:var(--sk-soft);padding:2px 9px;border-radius:999px;font-weight:600}
+  .sk-author-meta{font-size:12.5px;color:var(--sk-muted);margin-top:3px}
+  .sk-author p{font-size:13.5px;color:var(--sk-muted);margin-top:9px;line-height:1.8}
+  .sk-author-links{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+  .sk-author-links button{
+    font-size:12px;padding:5px 12px;border-radius:8px;border:1px solid var(--sk-line);
+    color:#5a3fd6;font-weight:600;background:#fbfaff;transition:.2s;
+  }
+  .sk-author-links button:hover{background:#f1ecff}
+
+  /* ===== 评论区（双列短评） ===== */
+  .sk-comment-wrap{
+    background:linear-gradient(160deg,#1b1b3a,#26205c);
+    border-radius:26px;padding:44px 40px;color:#e8e3ff;
+  }
+  .sk-comment-wrap .sk-h2{color:#fff}
+  .sk-comment-wrap .sk-lead{color:#b3aed6}
+  .sk-comment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:26px}
+  .sk-comment{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+    border-radius:16px;padding:18px 20px;transition:background .2s;
+  }
+  .sk-comment:hover{background:rgba(255,255,255,.1)}
+  .sk-comment-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+  .sk-comment-head .sk-avatar{width:34px;height:34px;font-size:14px}
+  .sk-comment-head b{font-size:13.5px;color:#fff;font-weight:600}
+  .sk-comment-head i{font-style:normal;font-size:11.5px;color:var(--sk-gold);margin-left:auto;letter-spacing:1px}
+  .sk-comment p{font-size:13.5px;color:#c3bde6;line-height:1.8}
+  .sk-comment .sk-meta{color:#8f89b8;font-size:11.5px;margin-top:8px}
+  .sk-comment-summary{
+    display:flex;align-items:center;gap:16px;margin-top:22px;flex-wrap:wrap;
+    font-size:13px;color:#b3aed6;
+  }
+  .sk-stars{color:var(--sk-gold);letter-spacing:2px;font-size:15px}
+
+  /* ===== 企业动态 / 图文索引 ===== */
+  .sk-news-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:34px;align-items:start}
+  .sk-timeline{position:relative;padding-left:24px}
+  .sk-timeline::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,#9a6bff,#e5e2f5)}
+  .sk-tl-item{position:relative;padding-bottom:22px}
+  .sk-tl-item::before{
+    content:"";position:absolute;left:-24px;top:7px;width:12px;height:12px;border-radius:50%;
+    background:#fff;border:3px solid #9a6bff;
+  }
+  .sk-tl-item time{font-size:12px;color:#9a94bd;letter-spacing:.5px}
+  .sk-tl-item b{display:block;font-size:15px;color:var(--sk-ink);margin:2px 0 3px;font-weight:700}
+  .sk-tl-item p{font-size:13.5px;color:var(--sk-muted)}
+
+  .sk-index-list{display:flex;flex-direction:column;gap:14px}
+  .sk-index-item{
+    display:grid;grid-template-columns:108px minmax(0,1fr);gap:16px;align-items:center;
+    background:#fff;border:1px solid var(--sk-line);border-radius:14px;padding:12px 14px;
+    box-shadow:0 4px 14px rgba(30,24,80,.05);transition:transform .2s;
+  }
+  .sk-index-item:hover{transform:translateX(4px)}
+  .sk-index-item .sk-thumb{border-radius:10px;overflow:hidden;aspect-ratio:16/10}
+  .sk-index-item .sk-thumb img{width:100%;height:100%;object-fit:cover}
+  .sk-index-item b{display:block;font-size:14.5px;color:var(--sk-ink);line-height:1.5}
+  .sk-index-item small{font-size:12.5px;color:var(--sk-muted)}
+
+  /* ===== FAQ ===== */
+  .sk-faq{display:flex;flex-direction:column;gap:12px;max-width:900px;margin:0 auto}
+  .sk-faq details{
+    background:#fff;border:1px solid var(--sk-line);border-radius:14px;
+    padding:2px 20px;box-shadow:0 4px 14px rgba(30,24,80,.05);
+    transition:border-color .2s;
+  }
+  .sk-faq details[open]{border-color:#cfc7ff}
+  .sk-faq summary{
+    list-style:none;cursor:pointer;padding:16px 0;font-size:15px;font-weight:700;color:var(--sk-ink);
+    display:flex;align-items:center;gap:12px;
+  }
+  .sk-faq summary::-webkit-details-marker{display:none}
+  .sk-faq summary::before{
+    content:"+";flex:0 0 auto;width:22px;height:22px;border-radius:7px;
+    background:var(--sk-soft);color:#6a4bff;display:flex;align-items:center;justify-content:center;
+    font-size:16px;font-weight:700;line-height:1;
+  }
+  .sk-faq details[open] summary::before{content:"−";background:#6a4bff;color:#fff}
+  .sk-faq p{padding:0 0 18px 34px;font-size:14px;color:var(--sk-muted);line-height:1.85}
+
+  /* ===== 合作 + 投稿 ===== */
+  .sk-partner-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+  .sk-partner{
+    background:#fff;border:1px solid var(--sk-line);border-radius:14px;
+    padding:18px 14px;text-align:center;font-size:13.5px;color:#4a4a68;font-weight:600;
+    letter-spacing:.5px;transition:.2s;
+  }
+  .sk-partner:hover{background:var(--sk-soft);border-color:#cfc7ff;color:#4b2fd0}
+  .sk-partner small{display:block;font-size:11.5px;color:#9a94bd;font-weight:400;margin-top:4px;letter-spacing:0}
+
+  .sk-submit{
+    display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;
+    background:linear-gradient(120deg,#efeaff,#fff7e3);
+    border:1px solid #e3dbff;border-radius:22px;padding:32px 34px;
+  }
+  .sk-submit h3{font-size:20px;color:var(--sk-ink);font-weight:800;margin-bottom:6px}
+  .sk-submit p{font-size:14px;color:var(--sk-muted);max-width:640px}
+
+  /* ===== 页脚 ===== */
+  .sk-footer{
+    background:#0d0d20;color:#a9a4c8;padding:56px 0 26px;font-size:13.5px;
+    position:relative;overflow:hidden;
+  }
+  .sk-footer::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:radial-gradient(1.6px 1.6px at 12% 24%,rgba(255,209,102,.7),transparent),
+      radial-gradient(1.4px 1.4px at 72% 16%,rgba(184,169,255,.8),transparent),
+      radial-gradient(1.4px 1.4px at 88% 68%,rgba(255,255,255,.5),transparent),
+      radial-gradient(1.4px 1.4px at 34% 82%,rgba(143,227,255,.6),transparent);
+  }
+  .sk-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:32px;position:relative;z-index:2}
+  .sk-footer h4{font-size:14px;color:#fff;font-weight:700;margin-bottom:14px;letter-spacing:1px}
+  .sk-footer ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+  .sk-footer a:hover{color:var(--sk-gold)}
+  .sk-footer-brand .sk-brand-name{color:#fff}
+  .sk-footer-brand p{margin-top:14px;line-height:1.85;max-width:300px;font-size:13px;color:#8f89b8}
+  .sk-footer-bottom{
+    margin-top:38px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+    font-size:12.5px;color:#7b76a0;position:relative;z-index:2;
+  }
+  .sk-footer-bottom span{letter-spacing:.3px}
+
+  /* ===== Toast / 弹窗 / 回到顶部 ===== */
+  .sk-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+    background:#1b1b3a;color:#fff;font-size:13.5px;padding:11px 22px;border-radius:12px;
+    box-shadow:0 12px 30px rgba(0,0,0,.3);opacity:0;pointer-events:none;
+    transition:opacity .25s,transform .25s;z-index:200;border:1px solid rgba(255,255,255,.14);
+  }
+  .sk-toast.on{opacity:1;transform:translate(-50%,0)}
+
+  .sk-modal{
+    position:fixed;inset:0;background:rgba(13,13,32,.62);backdrop-filter:blur(4px);
+    display:none;align-items:center;justify-content:center;padding:20px;z-index:180;
+  }
+  .sk-modal.on{display:flex}
+  .sk-modal-box{
+    background:#fff;border-radius:20px;padding:30px 30px 26px;width:min(520px,100%);
+    box-shadow:0 30px 80px rgba(0,0,0,.35);position:relative;
+    max-height:86vh;overflow:auto;
+  }
+  .sk-modal-box h3{font-size:19px;color:var(--sk-ink);margin-bottom:8px;font-weight:800}
+  .sk-modal-box p{font-size:14px;color:var(--sk-muted);margin-bottom:16px;line-height:1.8}
+  .sk-modal-close{
+    position:absolute;right:16px;top:14px;width:32px;height:32px;border-radius:9px;
+    background:var(--sk-soft);color:#5a5480;font-size:17px;line-height:1;
+  }
+  .sk-modal textarea,.sk-modal input{
+    width:100%;border:1px solid var(--sk-line);border-radius:10px;padding:10px 12px;
+    font-size:14px;font-family:inherit;color:var(--sk-text);outline:none;margin-bottom:12px;
+    background:#fbfaff;
+  }
+  .sk-modal textarea{min-height:96px;resize:vertical}
+  .sk-modal textarea:focus,.sk-modal input:focus{border-color:#b8a9ff;box-shadow:0 0 0 3px rgba(184,169,255,.22)}
+
+  .sk-top{
+    position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:14px;
+    background:linear-gradient(135deg,#6a4bff,#9a6bff);color:#fff;font-size:18px;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 12px 28px rgba(90,63,214,.4);opacity:0;pointer-events:none;
+    transition:opacity .25s,transform .25s;z-index:90;
+  }
+  .sk-top.on{opacity:1;pointer-events:auto}
+  .sk-top:hover{transform:translateY(-3px)}
+
+  /* ===== 响应式 ===== */
+  @media (max-width:1024px){
+    .sk-hero-grid{grid-template-columns:1fr;gap:30px;padding:44px 0 50px}
+    .sk-hero-intro{max-width:none}
+    .sk-focus-grid,.sk-parse,.sk-news-grid{grid-template-columns:1fr}
+    .sk-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .sk-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .sk-footer-grid{grid-template-columns:1fr 1fr}
+    .sk-partner-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    :root{--sk-header-h:104px}
+  }
+  @media (max-width:860px){
+    .sk-nav{
+      display:none;position:absolute;left:0;right:0;top:100%;
+      background:#fff;flex-direction:column;gap:2px;padding:12px 4%;
+      border-bottom:1px solid var(--sk-line);box-shadow:0 16px 30px rgba(30,24,80,.12);
+    }
+    .sk-nav.open{display:flex}
+    .sk-nav a{padding:11px 14px;font-size:15px}
+    .sk-header-inner{position:relative;flex-wrap:wrap;gap:12px;padding:12px 0;min-height:auto}
+    .sk-search{order:3;width:100%;min-width:0;margin-left:0}
+    .sk-menu-btn{display:flex;margin-left:auto}
+    .sk-search-feedback{right:4%;margin-top:0;top:calc(100% + 96px)}
+    :root{--sk-header-h:132px}
+  }
+  @media (max-width:680px){
+    .sk-section{padding:46px 0}
+    .sk-author-grid,.sk-comment-grid,.sk-topic-grid{grid-template-columns:1fr}
+    .sk-comment-wrap{padding:30px 22px;border-radius:20px}
+    .sk-hero-stats{grid-template-columns:1fr;gap:16px;text-align:left}
+    .sk-hero-chip{left:0;bottom:-10px}
+    .sk-submit{grid-template-columns:1fr;padding:26px 22px}
+    .sk-footer-grid{grid-template-columns:1fr}
+    .sk-index-item{grid-template-columns:84px minmax(0,1fr)}
+    .sk-vitem{grid-template-columns:28px minmax(0,1fr);}
+    .sk-vdata{grid-column:2;flex-direction:row;align-items:center;justify-content:flex-start;flex-wrap:wrap;margin-top:6px}
+    .sk-metrics{grid-template-columns:1fr 1fr}
+    .sk-partner-grid{grid-template-columns:1fr}
+    .sk-notice-list span:nth-child(n+2){display:none}
+  }
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="sk-sticky">
+  <div class="sk-notice" role="region" aria-label="平台公告">
+    <div class="sk-wrap sk-notice-inner">
+      <span class="sk-notice-tag">官方发布</span>
+      <div class="sk-notice-list">
+        <span><b>11月22日</b>「冬夜星轨」糖果光影企划开放报名，首批30位创作者入驻</span>
+        <span><b>11月18日</b>星空丶糖果创作者激励计划第四期上线，投稿通道已开启</span>
+        <span><b>11月12日</b>品牌官网高清片库扩容，新增1240条原创正版内容</span>
+        <span><b>11月05日</b>「糖果星球」社区投票结果公布，年度人气作品名单同步更新</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="sk-header">
+    <div class="sk-wrap sk-header-inner">
+      <a class="sk-brand" href="#sk-hero" aria-label="星空丶糖果官方网站首页">
+        <svg class="sk-brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1b1b3a"></rect>
+          <circle cx="20" cy="18" r="2.6" fill="#ffd166"></circle>
+          <circle cx="46" cy="14" r="1.8" fill="#ffd166"></circle>
+          <circle cx="52" cy="34" r="2.2" fill="#b8a9ff"></circle>
+          <circle cx="14" cy="40" r="1.8" fill="#8fe3ff"></circle>
+          <path d="M32 21c5 8 10 11 10 19a10 10 0 0 1-20 0c0-8 5-11 10-19z" fill="#fff"></path>
+          <path d="M32 27c2.6 4.6 5.4 6.6 5.4 12a5.4 5.4 0 0 1-10.8 0c0-5.4 2.8-7.4 5.4-12z" fill="#ff9ec4"></path>
+        </svg>
+        <span>
+          <span class="sk-brand-name">星空丶糖果</span>
+          <span class="sk-brand-sub">STARRY CANDY</span>
+        </span>
+      </a>
+
+      <nav class="sk-nav" id="skNav" aria-label="主导航">
+        <a href="#sk-hero">首页</a>
+        <a href="#sk-focus">焦点内容</a>
+        <a href="#sk-topics">专题企划</a>
+        <a href="#sk-parse">品牌解析</a>
+        <a href="#sk-authors">创作者</a>
+        <a href="#sk-comments">口碑评价</a>
+        <a href="#sk-news">企业动态</a>
+        <a href="#sk-faq">帮助中心</a>
+      </nav>
+
+      <div class="sk-search" role="search">
+        <input type="search" id="skSearchInput" placeholder="搜索糖果手作、星空影像、创作者…" aria-label="站内搜索">
+        <button type="button" id="skSearchBtn">搜索</button>
+      </div>
+
+      <button class="sk-menu-btn" id="skMenuBtn" type="button" aria-label="展开导航菜单" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+    <div class="sk-search-feedback" id="skSearchFeedback" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<!-- ===== 首屏 ===== -->
+<section class="sk-hero" id="sk-hero">
+  <div class="sk-wrap sk-hero-grid">
+    <div>
+      <span class="sk-hero-badge"><i></i>星空丶糖果 · 企业官方网站</span>
+      <h1>星空丶糖果 品牌视频官网</h1>
+      <p class="sk-hero-slogan">把夜色揉进糖里，把星光拍成故事</p>
+      <p class="sk-hero-intro">
+        作为国内深耕星空影像与糖果手作领域的原创内容品牌，星空丶糖果官方网站为创作者与企业搭建高品质内容生态：
+        以<strong>高清正版视频</strong>记录夜色、糖艺与生活，以真实、温暖、持续的社区陪伴每一颗好奇的心。
+        我们相信，一颗糖的甜可以很轻，一段影像的力量可以很长。
+      </p>
+      <div class="sk-hero-actions">
+        <a class="sk-btn sk-btn-primary" href="#sk-focus">观看精品内容</a>
+        <a class="sk-btn sk-btn-ghost" href="#sk-authors">认识创作者</a>
+        <button class="sk-btn sk-btn-ghost" type="button" id="skHeroSubmit">投稿入口</button>
+      </div>
+      <div class="sk-hero-stats">
+        <div><b>1280+</b><small>原创高清视频</small></div>
+        <div><b>96.4万</b><small>社区用户关注</small></div>
+        <div><b>7年</b><small>持续运营深耕</small></div>
+      </div>
+    </div>
+    <div class="sk-hero-visual">
+      <figure>
+        <svg viewBox="0 0 640 420" width="100%" role="img" aria-label="深蓝夜空下悬浮的玻璃糖果罐与星轨光带插画">
+          <defs>
+            <linearGradient id="skSky" x1="0" y1="0" x2="0.6" y2="1">
+              <stop offset="0" stop-color="#141433"></stop>
+              <stop offset="0.55" stop-color="#242050"></stop>
+              <stop offset="1" stop-color="#3a2a63"></stop>
+            </linearGradient>
+            <linearGradient id="skJar" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffffff" stop-opacity="0.34"></stop>
+              <stop offset="1" stop-color="#b8a9ff" stop-opacity="0.14"></stop>
+            </linearGradient>
+            <radialGradient id="skGlow" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0" stop-color="#ffd166" stop-opacity="0.5"></stop>
+              <stop offset="1" stop-color="#ffd166" stop-opacity="0"></stop>
+            </radialGradient>
+          </defs>
+          <rect width="640" height="420" fill="url(#skSky)"></rect>
+          <circle cx="512" cy="86" r="62" fill="url(#skGlow)"></circle>
+          <path d="M0 300 C120 250 200 330 320 292 C440 254 520 318 640 276 L640 420 L0 420 Z" fill="#1a1638"></path>
+          <path d="M0 344 C140 300 240 372 360 338 C470 306 560 360 640 330 L640 420 L0 420 Z" fill="#120f2b"></path>
+          <g stroke="#ffd166" stroke-width="1.1" fill="none" opacity="0.55">
+            <path d="M60 110 Q180 42 300 96 T540 72"></path>
+            <path d="M30 168 Q160 104 296 158 T596 128"></path>
+          </g>
+          <g fill="#fff">
+            <circle cx="88" cy="72" r="2"></circle><circle cx="158" cy="42" r="1.6"></circle>
+            <circle cx="232" cy="86" r="2.2"></circle><circle cx="330" cy="40" r="1.5"></circle>
+            <circle cx="412" cy="96" r="1.9"></circle><circle cx="470" cy="52" r="1.4"></circle>
+            <circle cx="592" cy="112" r="2"></circle><circle cx="378" cy="176" r="1.5"></circle>
+            <circle cx="120" cy="212" r="1.6"></circle><circle cx="540" cy="196" r="1.7"></circle>
+          </g>
+          <g transform="translate(238,150)">
+            <rect x="0" y="34" width="164" height="150" rx="26" fill="url(#skJar)" stroke="#cdc6ff" stroke-width="1.6" stroke-opacity="0.7"></rect>
+            <rect x="26" y="0" width="112" height="40" rx="14" fill="#ffd166" fill-opacity="0.85"></rect>
+            <rect x="40" y="10" width="84" height="20" rx="8" fill="#f5a623" fill-opacity="0.5"></rect>
+            <circle cx="52" cy="112" r="17" fill="#ff9ec4"></circle>
+            <circle cx="94" cy="132" r="14" fill="#8fe3ff"></circle>
+            <circle cx="126" cy="104" r="15" fill="#ffd166"></circle>
+            <circle cx="72" cy="152" r="11" fill="#b8a9ff"></circle>
+            <circle cx="114" cy="158" r="9" fill="#fff" fill-opacity="0.8"></circle>
+            <path d="M18 62 L146 62" stroke="#ffffff" stroke-opacity="0.45" stroke-width="2" stroke-linecap="round"></path>
+          </g>
+          <g fill="#ffd166" opacity="0.9">
+            <circle cx="196" cy="266" r="3"></circle><circle cx="452" cy="252" r="2.4"></circle>
+            <circle cx="418" cy="308" r="1.9"></circle><circle cx="214" cy="330" r="2.1"></circle>
+          </g>
+        </svg>
+      </figure>
+      <figcaption>首屏主视觉 ·「玻璃糖罐与星轨」数字插画，品牌年度视觉资产</figcaption>
+      <div class="sk-hero-chip"><i></i>正在直播 · 冬夜星轨摄影第 4 讲</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 焦点内容 + 视频流 ===== -->
+<section class="sk-section" id="sk-focus">
+  <div class="sk-wrap">
+    <div class="sk-sec-head">
+      <span class="sk-eyebrow">焦点内容</span>
+      <h2 class="sk-h2">本季<em>星空丶糖果</em>精品内容推荐</h2>
+      <p class="sk-lead">每一期都由编辑团队与官方签约创作者联合出品，覆盖星空影像、糖果手作、生活记录与创作幕后，全部为平台原创正版高清内容。</p>
+    </div>
+
+    <div class="sk-focus-grid">
+      <article class="sk-focus-card">
+        <div class="sk-focus-thumb">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23171738'/%3E%3Cstop offset='1' stop-color='%23412f6e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23g1)'/%3E%3Cpath d='M0 268 C120 226 210 292 330 258 C450 222 540 282 640 250 L640 360 L0 360 Z' fill='%230e0b24'/%3E%3Cg stroke='%23ffd166' stroke-width='2' fill='none' opacity='0.7'%3E%3Cpath d='M40 120 Q180 40 320 104 T600 78'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='96' cy='70' r='2.4'/%3E%3Ccircle cx='210' cy='46' r='1.8'/%3E%3Ccircle cx='368' cy='60' r='2.1'/%3E%3Ccircle cx='486' cy='40' r='1.6'/%3E%3Ccircle cx='560' cy='112' r='2'/%3E%3C/g%3E%3Ccircle cx='320' cy='206' r='44' fill='%23ff9ec4' opacity='0.9'/%3E%3Ccircle cx='320' cy='206' r='30' fill='%23342b63' opacity='0.75'/%3E%3Cpath d='M320 176 l7 20 21 1 -17 13 6 21 -17-13 -17 13 6-21 -17-13 21-1z' fill='%23ffd166'/%3E%3C/svg%3E" alt="星空糖果焦点内容：星轨延时摄影与夜色糖罐合成画面" width="640" height="360">
+          <span class="sk-focus-tag">官方精选</span>
+          <span class="sk-play" aria-hidden="true"></span>
+        </div>
+        <div class="sk-focus-body">
+          <h3 class="sk-h3">《星轨与糖罐》：把一整夜的星空装进一颗糖</h3>
+          <p>摄影师「夜航糖」用三台机位、11小时延时与糖艺师的手作糖果微距交替剪辑，讲述一位摄影爱好者如何在城市边缘找到干净夜空，并把那一晚的颜色做成了可食用的星空糖。全片4K高清，含完整拍摄参数与后期思路。</p>
+          <div class="sk-meta">
+            <span>作者：夜航糖</span><span>时长 18:42</span><span><b>播放 42.6万</b></span><span>收藏 1.8万</span>
+          </div>
+        </div>
+      </article>
+
+      <div>
+        <div class="sk-vlist">
+          <div class="sk-vitem">
+            <span class="sk-vnum">01</span>
+            <div>
+              <h3 class="sk-h3">糖果拉糖工艺入门：透明糖壳的三种失败与成功</h3>
+              <p>从糖温曲线到湿度控制，糖艺师阿糖拆解透明糖壳的完整流程，附常见翻车现场与补救方案。</p>
+              <div class="sk-vtags">
+                <span class="sk-tag">手作DIY</span><span class="sk-tag sk-tag-rose">教程干货</span><span class="sk-tag sk-tag-cyan">星空糖果</span>
+              </div>
+            </div>
+            <div class="sk-vdata">
+              <span>播放 18.2万</span><span>作者：阿糖</span>
+              <button type="button" class="sk-like-btn" data-count="1820">赞 1820</button>
+            </div>
+          </div>
+
+          <div class="sk-vitem">
+            <span class="sk-vnum">02</span>
+            <div>
+              <h3 class="sk-h3">城市边缘的银河：一份适合新手的观星拍摄攻略</h3>
+              <p>从光污染地图、赤道仪校精确到曝光堆栈参数，完整复刻一次郊外银河拍摄的实拍记录。</p>
+              <div class="sk-vtags">
+                <span class="sk-tag">星空影像</span><span class="sk-tag sk-tag-cyan">实用技巧</span>
+              </div>
+            </div>
+            <div class="sk-vdata">
+              <span>播放 15.7万</span><span>作者：沈星野</span>
+              <button type="button" class="sk-like-btn" data-count="1436">赞 1436</button>
+            </div>
+          </div>
+
+          <div class="sk-vitem">
+            <span class="sk-vnum">03</span>
+            <div>
+              <h3 class="sk-h3">糖果色情绪短片：用一块糖讲完一段告别</h3>
+              <p>三分钟无对白短片，用六种糖果的颜色变化完成情绪转折，全片自然光拍摄，后期仅做轻微调色。</p>
+              <div class="sk-vtags">
+                <span class="sk-tag">情感故事</span><span class="sk-tag sk-tag-rose">原创短片</span>
+              </div>
+            </div>
+            <div class="sk-vdata">
+              <span>播放 31.4万</span><span>作者：陆小满</span>
+              <button type="button" class="sk-like-btn" data-count="2604">赞 2604</button>
+            </div>
+          </div>
+
+          <div class="sk-vitem">
+            <span class="sk-vnum">04</span>
+            <div>
+              <h3 class="sk-h3">一间糖果工作室的七年：从煮糖锅到内容品牌</h3>
+              <p>创始人访谈实录，讲星空丶糖果如何从一张操作台，成长为持续运营的原创内容社区品牌。</p>
+              <div class="sk-vtags">
+                <span class="sk-tag">品牌故事</span><span class="sk-tag sk-tag-rose">人物访谈</span>
+              </div>
+            </div>
+            <div class="sk-vdata">
+              <span>播放 9.8万</span><span>作者：品牌部</span>
+              <button type="button" class="sk-like-btn" data-count="964">赞 964</button>
+            </div>
+          </div>
+
+          <div class="sk-vitem">
+            <span class="sk-vnum">05</span>
+            <div>
+              <h3 class="sk-h3">深夜厨房：做一批会被星空吃掉的糖</h3>
+              <p>把跳跳糖、蝶豆花与可食用闪粉组合，做出会变色、会发光、会爆裂的三层星空糖，适合家庭尝试。</p>
+              <div class="sk-vtags">
+                <span class="sk-tag">美食烹饪</span><span class="sk-tag sk-tag-cyan">日常记录</span>
+              </div>
+            </div>
+            <div class="sk-vdata">
+              <span>播放 12.1万</span><span>作者：阿糖</span>
+              <button type="button" class="sk-like-btn" data-count="1108">赞 1108</button>
+            </div>
+          </div>
+        </div>
+        <p style="font-size:12.5px;color:var(--sk-muted);margin-top:14px;text-align:right">以上内容均来自星空丶糖果官方网站原创内容库，支持高清播放与收藏</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 专题企划 ===== -->
+<section class="sk-section sk-section-alt" id="sk-topics">
+  <div class="sk-wrap">
+    <div class="sk-sec-head">
+      <span class="sk-eyebrow">专题企划</span>
+      <h2 class="sk-h2">三项<em>星空丶糖果</em>品牌企划，正在持续更新</h2>
+      <p class="sk-lead">专题是平台内容生态的核心结构，每一项企划都围绕星空影像与糖果手作的交叉领域展开，由编辑部统筹、创作者共建。</p>
+    </div>
+
+    <div class="sk-topic-grid">
+      <article class="sk-topic">
+        <div class="sk-topic-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23221a4a'/%3E%3Ccircle cx='120' cy='70' r='46' fill='%23ffd166' opacity='0.22'/%3E%3Cpath d='M0 190 C90 158 160 206 250 180 C340 154 410 196 480 170 L480 270 L0 270 Z' fill='%23120f2e'/%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='70' cy='54' r='2'/%3E%3Ccircle cx='190' cy='38' r='1.6'/%3E%3Ccircle cx='296' cy='62' r='2.2'/%3E%3Ccircle cx='392' cy='44' r='1.5'/%3E%3C/g%3E%3Crect x='188' y='118' width='104' height='86' rx='14' fill='%23ff9ec4' opacity='0.85'/%3E%3Crect x='206' y='96' width='68' height='26' rx='9' fill='%23ffd166'/%3E%3Ccircle cx='222' cy='162' r='10' fill='%23ffffff' opacity='0.75'/%3E%3Ccircle cx='256' cy='176' r='8' fill='%238fe3ff' opacity='0.9'/%3E%3C/svg%3E" alt="专题冬夜星轨企划的糖果罐与夜色概念插画" width="480" height="270">
+        </div>
+        <div class="sk-topic-top">
+          <h3 class="sk-h3">冬夜星轨计划</h3>
+          <span class="sk-status">更新中</span>
+        </div>
+        <p style="font-size:13.5px;color:var(--sk-muted)">以每年11月至次年1月的观星季为主线，联合摄影与糖艺创作者，产出星轨影像与夜光糖果双线内容。</p>
+        <ul>
+          <li>星轨入门四讲：从三脚架到堆栈合成</li>
+          <li>夜光糖配方公开：可食用荧光层的稳定性</li>
+          <li>创作者连线直播：冬夜拍摄现场答疑</li>
+        </ul>
+      </article>
+
+      <article class="sk-topic">
+        <div class="sk-topic-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23f6f2ff'/%3E%3Cg stroke='%23cfc7ff' stroke-width='2'%3E%3Cpath d='M40 210 L440 210'/%3E%3Cpath d='M80 210 L80 120'/%3E%3Cpath d='M200 210 L200 84'/%3E%3Cpath d='M320 210 L320 140'/%3E%3Cpath d='M420 210 L420 100'/%3E%3C/g%3E%3Ccircle cx='80' cy='106' r='16' fill='%239a6bff'/%3E%3Ccircle cx='200' cy='70' r='20' fill='%23ff9ec4'/%3E%3Ccircle cx='320' cy='126' r='14' fill='%238fe3ff'/%3E%3Ccircle cx='420' cy='86' r='18' fill='%23ffd166'/%3E%3Crect x='120' y='228' width='240' height='10' rx='5' fill='%23e3dbff'/%3E%3C/svg%3E" alt="糖果星球社区共创计划的创作者协作结构示意图" width="480" height="270">
+        </div>
+        <div class="sk-topic-top">
+          <h3 class="sk-h3">糖果星球共创</h3>
+          <span class="sk-status">招募中</span>
+        </div>
+        <p style="font-size:13.5px;color:var(--sk-muted)">面向全站创作者的公开企划，围绕“如果可以设计一颗星球味的糖”这一命题自由创作，优秀作品进入官方片库。</p>
+        <ul>
+          <li>命题创作：一颗糖代表一座星球</li>
+          <li>社区投票与编辑评审双通道</li>
+          <li>入选作品获得官方首页推荐位与分成</li>
+        </ul>
+      </article>
+
+      <article class="sk-topic">
+        <div class="sk-topic-top">
+          <h3 class="sk-h3">七年糖史档案</h3>
+          <span class="sk-status done">已完结</span>
+        </div>
+        <p style="font-size:13.5px;color:var(--sk-muted)">用影像复盘星空丶糖果七年的产品迭代与内容演进，从手作配方到内容生态的完整记录，共9集。</p>
+        <ul>
+          <li>第一集：一间十平米工作室的起点</li>
+          <li>第五集：第一次千人投稿与内容审核体系</li>
+          <li>第九集：品牌价值观与创作者公约发布</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 品牌解析（关键词解析，800字以上） ===== -->
+<section class="sk-section" id="sk-parse">
+  <div class="sk-wrap">
+    <div class="sk-sec-head">
+      <span class="sk-eyebrow">品牌解析</span>
+      <h2 class="sk-h2">为什么是<em>星空丶糖果</em>：一份深度内容解析</h2>
+      <p class="sk-lead">我们把“星空”与“糖果”放在一起，并不是修辞，而是一套完整的内容方法论与品牌语言。</p>
+    </div>
+
+    <div class="sk-parse">
+      <div>
+        <div class="sk-parse-card">
+          <h3 class="sk-h3">星空与糖果：两种媒介的同构性</h3>
+          <p><span class="sk-hl">星空丶糖果</span>这个名字最初来自创始人深夜煮糖时的一次抬头：糖浆在灯光下形成细腻的星点，而窗外的夜空同样布满微光。这个偶然的视觉重合，后来被沉淀为品牌的核心表达——<strong>星空代表辽阔、凝视与时间的尺度，糖果代表微小、具体与即时的甜蜜</strong>。在内容上，这意味着我们同时提供两种东西：需要长时间观看与思考的星空影像，以及几十秒就能获得情绪反馈的糖果手作短视频。两者并不割裂，反而构成“仰望—落地”的完整叙事闭环，让内容既有影响力又保留真实的生活感。</p>
+          <p>从平台运营视角看，这种同构性带来了明确的内容分工。星空方向的视频承担深度与专业度，多以延时、堆栈、长镜头呈现，适合作为品牌影响力与行业领先的背书；糖果方向的视频承担互动与社区活力，强调过程、手感、失败与补救，天然适合评论区和共创企划。创作者可以只专注其中一端，也可以在两端之间建立个人风格，而平台负责提供稳定、高清、正版的分发基础。</p>
+        </div>
+        <p class="sk-quote">“我们不贩卖浪漫，我们只是把浪漫拆解成可复制的步骤，再交给创作者去重拍一遍。”——品牌内部创作手册</p>
+      </div>
+
+      <div>
+        <h3 class="sk-h3">关键词三层解析：星空层、糖果层、社区层</h3>
+        <p><strong>第一层是星空层。</strong>它对应的是天文摄影、夜间影像与自然观察，是平台内容里技术门槛最高、也最容易被误读的部分。很多新手以为拍到银河需要昂贵器材，但在星空丶糖果的教程体系里，第一步永远是理解光污染与月相。我们与创作者一起把复杂参数拆成“地点、时相、机位、参数、合成”五个模块，每个模块独立成集，观众可以按需观看，不必从头看完一整套课。这种结构化的内容组织方式，是本平台作为专业内容平台的基础能力。</p>
+        <p><strong>第二层是糖果层。</strong>它对应的是糖艺、手作与家庭甜品。这一层的关键词是“可复现”。我们要求所有糖果内容必须在片尾给出完整配方与关键温度节点，并且标注失败概率较高的步骤。大量创作者采用“三次尝试”的结构——第一次失败、第二次调整、第三次成功，把过程完整保留，而不是只展示结果。这种真实、不修饰的表达，正是社区活力的来源，也让普通观众敢于进入、敢于上传、敢于报名参加企划。</p>
+        <p><strong>第三层是社区层。</strong>它对应的是创作者、观众与平台三方的关系。星空丶糖果持续运营七年，最重要的经验是：社区不是评论区，而是内容生产的分工体系。编辑负责结构与选题，创作者负责表达与执行，用户负责反馈与二次传播。我们建立了投稿入口、创作者公约、审核标准与激励计划，让每一次上传都能得到明确回应。这种稳定机制让平台在垂直领域内形成口碑，也让“值得信赖”不只是一句口号，而是可以被验证的日常体验。</p>
+      </div>
+    </div>
+
+    <div class="sk-parse" style="margin-top:28px">
+      <div class="sk-parse-card">
+        <h3 class="sk-h3">内容生态如何持续运转</h3>
+        <p>内容生态的健康度往往不取决于爆款数量，而取决于中腰部内容是否稳定产出。星空丶糖果采用三层发布结构：官方精品内容由编辑部与签约创作者联合制作，保证品质与视觉一致性；社区内容由所有注册创作者贡献，平台提供模板化的封面与字段建议，降低制作门槛；企划内容则以命题方式集中生产，形成阶段性的内容高峰。三层结构互相供给，官方内容为社区提供标杆，社区内容为官方提供选题灵感，企划内容则把分散的关注度收束成品牌事件。</p>
+        <p>在分发上，平台坚持正版与高清优先。所有投稿内容在上传时即完成版权声明与清晰度校验，未达标的内容会在创作者端收到具体修改建议，而不是直接下架。这一细节极大降低了创作者的挫败感，也让内容库的整体质量逐年提升。七年积累下来，官网片库的1240余条高清内容构成了品牌最实在的资产，也是企业合作与内容授权的信任基础。</p>
+      </div>
+      <div class="sk-parse-card">
+        <h3 class="sk-h3">品牌价值观与现实约束</h3>
+        <p>我们承认，浪漫叙事很容易变成空话，因此品牌在内部设定了三条现实约束。第一，所有教程必须有可验证的复现记录，至少由两位编辑独立操作成功后才可发布；第二，所有设备与原料推荐必须标注价格区间与替代方案，不做单一品牌引导；第三，所有涉及儿童的内容必须附带安全提示，煮糖类内容明确标注温度风险。这些约束看起来琐碎，却直接影响用户是否愿意长期留下。内容平台真正的护城河不是流量，而是用户在做决定时愿意相信你。</p>
+        <p>也正因为如此，我们更愿意把“星空丶糖果”理解为一个<strong>长期主义的内容项目</strong>，而不是短期的流量账号。七年、1280余条原创视频、96.4万社区用户，这些数字背后是大量重复、琐碎、并不总是有趣的日常工作：审核、标注、回复、备份、重制。但恰恰是这些工作构成了企业级内容的品质底线，也让星空丶糖果在垂直领域里保有持续运营的能力与社会责任意识。</p>
+      </div>
+    </div>
+
+    <div class="sk-metrics" style="margin-top:34px">
+      <div class="sk-metric"><b>1280+</b><small>原创高清内容</small></div>
+      <div class="sk-metric"><b>312</b><small>签约与认证创作者</small></div>
+      <div class="sk-metric"><b>96.4万</b><small>社区累计关注</small></div>
+      <div class="sk-metric"><b>7年</b><small>品牌持续运营</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 创作者矩阵（双列简介） ===== -->
+<section class="sk-section sk-section-alt" id="sk-authors">
+  <div class="sk-wrap">
+    <div class="sk-sec-head">
+      <span class="sk-eyebrow">创作者矩阵</span>
+      <h2 class="sk-h2"><em>星空丶糖果</em>社区里值得长期关注的创作者</h2>
+      <p class="sk-lead">他们来自摄影、糖艺、短片与写作等不同领域，共同点是：稳定产出、真实表达、愿意与社区对话。</p>
+    </div>
+
+    <div class="sk-author-grid">
+      <article class="sk-author">
+        <div class="sk-avatar sk-av-a">夜</div>
+        <div>
+          <div class="sk-author-name">夜航糖 <span>认证创作者</span></div>
+          <div class="sk-author-meta">擅长：星空影像 · 天文摄影 | 作品 86 | 粉丝 12.3万</div>
+          <p>前航空摄影师，现专注城市边缘的星空记录。习惯用一整夜等一张图，也习惯在视频里把失败的废片全部放出来。代表系列《星轨四讲》《光污染的边界》，是平台星空方向内容的标准制定者之一。</p>
+          <div class="sk-author-links">
+            <button type="button" class="sk-author-btn" data-name="夜航糖" data-desc="夜航糖，星空丶糖果认证创作者，擅长星空影像与天文摄影。作品86条，粉丝12.3万，代表系列《星轨四讲》《光污染的边界》，主张把失败过程完整呈现给观众。">作者简介</button>
+            <button type="button" class="sk-follow-btn">关注</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="sk-author">
+        <div class="sk-avatar sk-av-b">糖</div>
+        <div>
+          <div class="sk-author-name">阿糖 <span>糖艺主理人</span></div>
+          <div class="sk-author-meta">擅长：手作DIY · 美食烹饪 | 作品 124 | 粉丝 18.7万</div>
+          <p>从业十一年的糖艺师，擅长把复杂工艺拆成家庭可执行的步骤。视频里有大量翻车现场和补救方案，被观众称为“最不藏私的糖艺博主”。长期参与平台糖果配方标准化工作。</p>
+          <div class="sk-author-links">
+            <button type="button" class="sk-author-btn" data-name="阿糖" data-desc="阿糖，星空丶糖果糖艺主理人，从业十一年，擅长手作DIY与美食烹饪。作品124条，粉丝18.7万，以翻车复盘与家庭可执行配方著称。">作者简介</button>
+            <button type="button" class="sk-follow-btn">关注</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="sk-author">
+        <div class="sk-avatar sk-av-c">陆</div>
+        <div>
+          <div class="sk-author-name">陆小满 <span>原创短片</span></div>
+          <div class="sk-author-meta">擅长：情感故事 · 治愈影像 | 作品 52 | 粉丝 9.6万</div>
+          <p>独立短片导演，偏爱无对白叙事与自然光。擅长用颜色推进情绪，一块糖、一盏灯都能成为叙事支点。作品多次入选平台年度精品内容，也是社区共创企划的常驻评审。</p>
+          <div class="sk-author-links">
+            <button type="button" class="sk-author-btn" data-name="陆小满" data-desc="陆小满，星空丶糖果原创短片创作者，擅长情感故事与治愈影像。作品52条，粉丝9.6万，偏爱无对白叙事与自然光，多次入选年度精品内容。">作者简介</button>
+            <button type="button" class="sk-follow-btn">关注</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="sk-author">
+        <div class="sk-avatar sk-av-d">星</div>
+        <div>
+          <div class="sk-author-name">沈星野 <span>实用攻略</span></div>
+          <div class="sk-author-meta">擅长：实用技巧 · 户外活动 | 作品 97 | 粉丝 11.2万</div>
+          <p>户外向导出身，擅长把观星路线、露营装备与拍摄参数整合成一份可以直接出发的清单。视频节奏快、信息密度高，评论区经常变成实地打卡汇报现场，是平台最活跃的攻略型创作者。</p>
+          <div class="sk-author-links">
+            <button type="button" class="sk-author-btn" data-name="沈星野" data-desc="沈星野，星空丶糖果实用攻略创作者，户外向导出身，擅长实用技巧与户外活动。作品97条，粉丝11.2万，以可直接执行的观星路线与装备清单著称。">作者简介</button>
+            <button type="button" class="sk-follow-btn">关注</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="sk-author">
+        <div class="sk-avatar sk-av-e">禾</div>
+        <div>
+          <div class="sk-author-name">禾木手记 <span>生活记录</span></div>
+          <div class="sk-author-meta">擅长：日常记录 · 生活方式 | 作品 68 | 粉丝 7.4万</div>
+          <p>用一年四季记录一间小院的生活，擅长把普通的做饭、晒糖、修枝拍得安静而克制。她的视频几乎没有配乐，只有环境声，被观众称为“可以下饭的慢影像”，是社区温暖的稳定来源。</p>
+          <div class="sk-author-links">
+            <button type="button" class="sk-author-btn" data-name="禾木手记" data-desc="禾木手记，星空丶糖果生活记录创作者，擅长日常记录与生活方式。作品68条，粉丝7.4万，以安静克制的环境声慢影像著称。">作者简介</button>
+            <button type="button" class="sk-follow-btn">关注</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 用户评价（双列短评） ===== -->
+<section class="sk-section" id="sk-comments">
+  <div class="sk-wrap">
+    <div class="sk-comment-wrap">
+      <div class="sk-sec-head" style="margin-bottom:0">
+        <span class="sk-eyebrow" style="color:var(--sk-gold)">社区口碑</span>
+        <h2 class="sk-h2">来自<em style="color:var(--sk-gold)">星空丶糖果</em>社区的真实评价</h2>
+        <p class="sk-lead">评价来自官网片库与社区投稿的公开讨论，未经筛选，保留不同维度与语气。</p>
+      </div>
+
+      <div class="sk-comment-grid">
+        <article class="sk-comment">
+          <div class="sk-comment-head">
+            <div class="sk-avatar sk-av-b">周</div>
+            <b>周末煮糖</b><i>★★★★★</i>
+          </div>
+          <p>跟着阿糖的拉糖教程做了三次，前两次全裂，第三次终于成功。视频里把失败原因讲得特别细，湿度那一段直接救了夏天。这是我见过最不藏私的手作内容。</p>
+          <div class="sk-meta">11月20日 · 手作DIY</div>
+        </article>
+
+        <article class="sk-comment">
+          <div class="sk-comment-head">
+            <div class="sk-avatar sk-av-a">林</div>
+            <b>林间有星</b><i>★★★★★</i>
+          </div>
+          <p>《星轨与糖罐》我在官网看了三遍。最打动我的不是成片多漂亮，而是他把11个小时的等待拍出来了。这种内容在短视频时代很难得，值得一个收藏。</p>
+          <div class="sk-meta">11月18日 · 星空影像</div>
+        </article>
+
+        <article class="sk-comment">
+          <div class="sk-comment-head">
+            <div class="sk-avatar sk-av-c">阿</div>
+            <b>阿鹿的胶片</b><i>★★★★☆</i>
+          </div>
+          <p>整体很喜欢，提个小建议：糖果配方能不能在视频下方加一个可下载的图文卡？我做饭的时候不太方便一直看视频，有个卡片会方便很多。</p>
+          <div class="sk-meta">11月16日 · 产品建议</div>
+        </article>
+
+        <article class="sk-comment">
+          <div class="sk-comment-head">
+            <div class="sk-avatar sk-av-d">林</div>
+            <b>凌晨四点的林</b><i>★★★★★</i>
+          </div>
+          <p>按沈星野的路线去了郊外，第一次拍到银河。他把光污染地图和参数都写清楚了，连打车到哪下车都标了，这种攻略太实用，已经推荐给三个朋友。</p>
+          <div class="sk-meta">11月14日 · 实用攻略</div>
+        </article>
+
+        <article class="sk-comment">
+          <div class="sk-comment-head">
+            <div class="sk-avatar sk-av-e">禾</div>
+            <b>一只慢蜗牛</b><i>★★★★☆</i>
+          </div>
+          <p>画面和气质都很稳，社区氛围也好，评论里很少有人吵架。唯一希望多更新一点，禾木手记的视频我基本看完了，等新片。</p>
+          <div class="sk-meta">11月12日 · 生活记录</div>
+        </article>
+
+        <article class="sk-comment">
+          <div class="sk-comment-head">
+            <div class="sk-avatar sk-av-b">科</div>
+            <b>蝌蚪实验室</b><i>★★★★★</i>
+          </div>
+          <p>从内容制作角度看，这个平台的封面和标题规范做得很专业，能看出编辑团队是真的懂视频。投稿审核给的意见也很具体，不是模板回复。</p>
+          <div class="sk-meta">11月10日 · 创作者视角</div>
+        </article>
+      </div>
+
+      <div class="sk-comment-summary">
+        <span class="sk-stars">★★★★★</span>
+        <span>综合评分 4.8 / 5.0</span>
+        <span>· 近30天新增评价 1264 条</span>
+        <span>· 好评率 96.7%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 企业动态 + 图文索引 ===== -->
+<section class="sk-section sk-section-alt" id="sk-news">
+  <div class="sk-wrap">
+    <div class="sk-sec-head">
+      <span class="sk-eyebrow">企业动态 · 内容索引</span>
+      <h2 class="sk-h2"><em>星空丶糖果</em>官方发布与本周内容索引</h2>
+      <p class="sk-lead">品牌资讯、活动公告与官网片库更新，按时间倒序排列；索引区收录本周值得回看的精品内容。</p>
+    </div>
+
+    <div class="sk-news-grid">
+      <div>
+        <h3 class="sk-h3" style="margin-bottom:18px">企业动态</h3>
+        <div class="sk-timeline">
+          <div class="sk-tl-item">
+            <time>2026年11月22日</time>
+            <b>「冬夜星轨」糖果光影企划开放报名</b>
+            <p>首批30位创作者入驻名额已开放，报名需提交一条60秒以上的星空或糖艺相关作品，审核周期为5个工作日。</p>
+          </div>
+          <div class="sk-tl-item">
+            <time>2026年11月18日</time>
+            <b>创作者激励计划第四期上线</b>
+            <p>新增阶梯式分成与首页推荐位，投稿通道在官网创作者中心长期开放，鼓励多元题材与真实表达。</p>
+          </div>
+          <div class="sk-tl-item">
+            <time>2026年11月12日</time>
+            <b>官网高清片库扩容完成</b>
+            <p>新增1240条原创正版内容，全站支持4K播放与断点续看，同时对旧内容完成画质重制与参数补全。</p>
+          </div>
+          <div class="sk-tl-item">
+            <time>2026年11月05日</time>
+            <b>「糖果星球」社区投票结果公布</b>
+            <p>共收到有效投票4.2万张，年度人气作品名单同步更新，前三名作品将获得品牌年度联名机会。</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="sk-h3" style="margin-bottom:18px">本周内容索引</h3>
+        <div class="sk-index-list">
+          <a class="sk-index-item" href="#sk-focus">
+            <div class="sk-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23ffe9c9'/%3E%3Ccircle cx='92' cy='96' r='44' fill='%23f5a623' opacity='0.9'/%3E%3Ccircle cx='92' cy='96' r='26' fill='%23fff' opacity='0.6'/%3E%3Crect x='168' y='60' width='96' height='96' rx='18' fill='%23ff9ec4'/%3E%3Cpath d='M190 130 L216 92 L242 130 Z' fill='%23fff' opacity='0.75'/%3E%3C/svg%3E" alt="糖果拉糖工艺教程索引缩略图" width="320" height="200">
+            </div>
+            <div>
+              <b>糖果拉糖工艺入门：透明糖壳的三种失败与成功</b>
+              <small>教程干货 · 18.2万播放</small>
+            </div>
+          </a>
+          <a class="sk-index-item" href="#sk-focus">
+            <div class="sk-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%230f1430'/%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='56' cy='40' r='2'/%3E%3Ccircle cx='120' cy='28' r='1.6'/%3E%3Ccircle cx='210' cy='46' r='2.2'/%3E%3Ccircle cx='270' cy='30' r='1.5'/%3E%3Ccircle cx='292' cy='86' r='1.8'/%3E%3C/g%3E%3Cpath d='M0 148 C70 122 130 162 200 140 C250 124 290 152 320 138 L320 200 L0 200 Z' fill='%23223a6b'/%3E%3Cpath d='M148 96 l8 22 24 1 -19 15 7 23 -20-15 -19 15 7-23 -19-15 24-1z' fill='%23ffd166'/%3E%3C/svg%3E" alt="城市边缘银河观星拍摄攻略索引缩略图" width="320" height="200">
+            </div>
+            <div>
+              <b>城市边缘的银河：新手观星拍摄攻略</b>
+              <small>实用技巧 · 15.7万播放</small>
+            </div>
+          </a>
+          <a class="sk-index-item" href="#sk-focus">
+            <div class="sk-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23f1ecff'/%3E%3Cg stroke='%239a6bff' stroke-width='3' fill='none'%3E%3Ccircle cx='160' cy='100' r='58'/%3E%3Ccircle cx='160' cy='100' r='34'/%3E%3C/g%3E%3Ccircle cx='160' cy='100' r='13' fill='%23ff9ec4'/%3E%3Ccircle cx='248' cy='52' r='8' fill='%238fe3ff'/%3E%3Ccircle cx='72' cy='150' r='6' fill='%23ffd166'/%3E%3C/svg%3E" alt="糖果色情绪短片创作记录索引缩略图" width="320" height="200">
+            </div>
+            <div>
+              <b>糖果色情绪短片：用一块糖讲完一段告别</b>
+              <small>原创短片 · 31.4万播放</small>
+            </div>
+          </a>
+          <a class="sk-index-item" href="#sk-news">
+            <div class="sk-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23eafaff'/%3E%3Crect x='40' y='40' width='240' height='120' rx='14' fill='%23ffffff' stroke='%238fe3ff' stroke-width='3'/%3E%3Crect x='62' y='66' width='92' height='9' rx='4.5' fill='%231c9fd6'/%3E%3Crect x='62' y='88' width='150' height='7' rx='3.5' fill='%23b8e9f7'/%3E%3Crect x='62' y='106' width='120' height='7' rx='3.5' fill='%23b8e9f7'/%3E%3Ccircle cx='248' cy='120' r='20' fill='%23ff9ec4' opacity='0.85'/%3E%3C/svg%3E" alt="星空丶糖果平台活动公告与更新日志索引缩略图" width="320" height="200">
+            </div>
+            <div>
+              <b>「冬夜星轨」企划报名开启，首批30位名额</b>
+              <small>官方发布 · 11月22日</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:42px">
+      <h3 class="sk-h3" style="margin-bottom:16px">合作品牌与伙伴</h3>
+      <div class="sk-partner-grid">
+        <div class="sk-partner">星野光学<small>器材支持伙伴</small></div>
+        <div class="sk-partner">甜度研究所<small>配方联合研发</small></div>
+        <div class="sk-partner">城市观星会<small>线下活动合作</small></div>
+        <div class="sk-partner">慢影像节<small>内容展映伙伴</small></div>
+      </div>
+    </div>
+
+    <div class="sk-submit" style="margin-top:42px">
+      <div>
+        <h3>把你拍下的那片星空，交给星空丶糖果</h3>
+        <p>官网创作者中心长期开放投稿，接受星空影像、糖果手作、生活记录与创作幕后等题材。审核通过后可进入官方片库，参与首页推荐与分成计划。</p>
+      </div>
+      <button class="sk-btn sk-btn-primary" type="button" id="skSubmitBtn">前往投稿</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sk-section" id="sk-faq">
+  <div class="sk-wrap">
+    <div class="sk-sec-head" style="text-align:center">
+      <span class="sk-eyebrow" style="justify-content:center">帮助中心</span>
+      <h2 class="sk-h2"><em>星空丶糖果</em>常见问题</h2>
+      <p class="sk-lead" style="margin:0 auto">关于投稿、版权、观看与合作的常见疑问，点击问题即可展开查看。</p>
+    </div>
+
+    <div class="sk-faq">
+      <details open>
+        <summary>如何向星空丶糖果官方网站投稿？</summary>
+        <p>进入官网创作者中心完成注册与实名认证，即可上传作品。投稿需填写标题、简介、标签与版权声明，并保证视频清晰度不低于1080P。审核周期通常为3至5个工作日，结果会通过站内消息通知。</p>
+      </details>
+      <details>
+        <summary>投稿后内容会被用于商业用途吗？</summary>
+        <p>不会未经授权使用。创作者保留作品著作权，平台获得的是展示与分发授权。如需用于品牌联名或商业合作，编辑会单独沟通并签署授权协议，创作者可自主选择参与或拒绝。</p>
+      </details>
+      <details>
+        <summary>我没有专业设备，可以参与星空影像企划吗？</summary>
+        <p>可以。企划评审更看重内容结构与真实表达，而非器材级别。手机配合三脚架与手动模式同样可以完成星轨拍摄，官网教程区有专门的入门清单，建议先看完《星轨四讲》第一集再投稿。</p>
+      </details>
+      <details>
+        <summary>糖果手作类内容需要标注哪些安全信息？</summary>
+        <p>涉及煮糖、高温糖浆与食品色素的内容，必须在视频或简介中标注温度风险与儿童安全提示。平台不接受未标注的煮糖类投稿，这是为了保障观众的实际操作安全。</p>
+      </details>
+      <details>
+        <summary>官网片库的视频可以下载吗？</summary>
+        <p>平台提供官方正版授权范围内的下载服务，部分精品内容支持高清下载并附带使用说明。未经授权的二次传播或商业使用属于违规行为，请在下载页面仔细阅读授权条款。</p>
+      </details>
+      <details>
+        <summary>企业合作与内容授权如何联系？</summary>
+        <p>可在页脚合作邮箱提交需求，说明合作类型、使用场景与时间周期。编辑团队会在两个工作日内回复，并根据内容匹配度推荐合适的创作者与片单。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="sk-footer">
+  <div class="sk-wrap">
+    <div class="sk-footer-grid">
+      <div class="sk-footer-brand">
+        <span class="sk-brand-name">星空丶糖果</span>
+        <p>星空丶糖果官方网站，专注星空影像与糖果手作的原创内容品牌。七年持续运营，1280余条高清正版内容，愿与每一位创作者共同成长。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#sk-focus">焦点内容</a></li>
+          <li><a href="#sk-topics">专题企划</a></li>
+          <li><a href="#sk-parse">品牌解析</a></li>
+          <li><a href="#sk-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区与帮助</h4>
+        <ul>
+          <li><a href="#sk-comments">社区口碑</a></li>
+          <li><a href="#sk-news">企业动态</a></li>
+          <li><a href="#sk-faq">常见问题</a></li>
+          <li><a href="#sk-hero">回到首页</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系与合作</h4>
+        <ul>
+          <li>合作邮箱：partner@starrycandy.example</li>
+          <li>投稿咨询：creator@starrycandy.example</li>
+          <li>工作时间：周一至周五 10:00–18:00</li>
+          <li>品牌地址：糖果星球创意园 3 号楼</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sk-footer-bottom">
+      <span>© 2026 星空丶糖果 官方网站 · 版权所有 · 持续运营中</span>
+      <span>原创正版 · 高清品质 · 值得信赖的内容社区</span>
+    </div>
+  </div>
+</footer>
+
+<button class="sk-top" id="skTopBtn" type="button" aria-label="回到顶部">↑</button>
+<div class="sk-toast" id="skToast" role="status" aria-live="polite"></div>
+
+<div class="sk-modal" id="skModal" role="dialog" aria-modal="true" aria-labelledby="skModalTitle">
+  <div class="sk-modal-box">
+    <button class="sk-modal-close" id="skModalClose" type="button" aria-label="关闭弹窗">×</button>
+    <h3 id="skModalTitle">投稿入口</h3>
+    <p id="skModalDesc">填写作品基本信息和联系方式，编辑部将在 3 至 5 个工作日内回复审核结果。</p>
+    <form id="skModalForm">
+      <input type="text" name="title" placeholder="作品标题，例如：我的第一颗星空糖" aria-label="作品标题">
+      <input type="text" name="contact" placeholder="联系方式（邮箱或社区昵称）" aria-label="联系方式">
+      <textarea name="intro" placeholder="用一两句话介绍这条作品的内容与创作思路…" aria-label="作品简介"></textarea>
+      <button class="sk-btn sk-btn-primary" type="submit" style="width:100%;justify-content:center">提交作品信息</button>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端导航 */
+  var menuBtn = document.getElementById("skMenuBtn");
+  var nav = document.getElementById("skNav");
+  if(menuBtn && nav){
+    menuBtn.addEventListener("click", function(){
+      var open = nav.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    nav.addEventListener("click", function(e){
+      if(e.target.tagName === "A"){
+        nav.classList.remove("open");
+        menuBtn.setAttribute("aria-expanded","false");
+      }
+    });
+  }
+
+  /* Toast */
+  var toast = document.getElementById("skToast");
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toast) return;
+    toast.textContent = msg;
+    toast.classList.add("on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove("on"); }, 2200);
+  }
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById("skSearchInput");
+  var searchBtn = document.getElementById("skSearchBtn");
+  var searchFeedback = document.getElementById("skSearchFeedback");
+  var searchPool = [
+    {k:"星空", t:"星空影像", d:"共 214 条相关内容，推荐《星轨与糖罐》"},
+    {k:"糖果", t:"糖果手作", d:"共 186 条相关内容，推荐拉糖工艺入门系列"},
+    {k:"教程", t:"教程干货", d:"共 97 条教程，含配方与拍摄参数"},
+    {k:"观星", t:"观星攻略", d:"共 63 条路线攻略，含光污染地图"},
+    {k:"创作者", t:"创作者", d:"共 312 位认证创作者，可按领域筛选"}
+  ];
+  function doSearch(){
+    var val = (searchInput.value || "").trim();
+    if(!searchFeedback) return;
+    if(!val){
+      searchFeedback.innerHTML = "请输入关键词，例如 <b>星空</b>、<b>糖果</b>、<b>教程</b>";
+      searchFeedback.classList.add("on");
+      return;
+    }
+    var hit = searchPool.filter(function(item){ return val.indexOf(item.k) > -1 || item.k.indexOf(val) > -1; })[0];
+    if(hit){
+      searchFeedback.innerHTML = "已匹配「<b>" + hit.t + "</b>」：" + hit.d;
+    }else{
+      searchFeedback.innerHTML = "未找到与「<b>" + val + "</b>」完全匹配的内容，试试 星空 / 糖果 / 教程 / 观星。";
+    }
+    searchFeedback.classList.add("on");
+  }
+  if(searchBtn) searchBtn.addEventListener("click", doSearch);
+  if(searchInput){
+    searchInput.addEventListener("keydown", function(e){
+      if(e.key === "Enter"){ e.preventDefault(); doSearch(); }
+    });
+    document.addEventListener("click", function(e){
+      if(searchFeedback && !searchFeedback.contains(e.target) && e.target !== searchInput && e.target !== searchBtn){
+        searchFeedback.classList.remove("on");
+      }
+    });
+  }
+
+  /* 点赞 */
+  document.querySelectorAll(".sk-like-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var base = parseInt(btn.getAttribute("data-count"), 10) || 0;
+      var liked = btn.classList.toggle("on");
+      var num = liked ? base + 1 : base;
+      btn.textContent = "赞 " + num;
+      showToast(liked ? "已点赞，感谢支持原创内容" : "已取消点赞");
+    });
+  });
+
+  /* 关注切换 */
+  document.querySelectorAll(".sk-follow-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var on = btn.dataset.on === "1";
+      btn.dataset.on = on ? "0" : "1";
+      btn.textContent = on ? "关注" : "已关注";
+      btn.style.background = on ? "" : "#6a4bff";
+      btn.style.color = on ? "" : "#fff";
+      btn.style.borderColor = on ? "" : "#6a4bff";
+      showToast(on ? "已取消关注" : "关注成功，将持续收到更新提醒");
+    });
+  });
+
+  /* 作者信息弹窗 */
+  var modal = document.getElementById("skModal");
+  var modalTitle = document.getElementById("skModalTitle");
+  var modalDesc = document.getElementById("skModalDesc");
+  var modalForm = document.getElementById("skModalForm");
+  var modalClose = document.getElementById("skModalClose");
+  var formMode = "submit";
+
+  function openModal(mode, payload){
+    formMode = mode;
+    if(mode === "author"){
+      modalTitle.textContent = payload.name + " · 创作者档案";
+      modalDesc.textContent = payload.desc;
+      modalForm.style.display = "none";
+    }else{
+      modalTitle.textContent = "投稿入口";
+      modalDesc.textContent = "填写作品基本信息和联系方式，编辑部将在 3 至 5 个工作日内回复审核结果。";
+      modalForm.style.display = "block";
+    }
+    modal.classList.add("on");
+  }
+  function closeModal(){
+    modal.classList.remove("on");
+  }
+  if(modalClose) modalClose.addEventListener("click", closeModal);
+  if(modal) modal.addEventListener("click", function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeModal(); });
+
+  document.querySelectorAll(".sk-author-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      openModal("author", {name: btn.dataset.name, desc: btn.dataset.desc});
+    });
+  });
+
+  var submitIds = ["skSubmitBtn","skHeroSubmit"];
+  submitIds.forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.addEventListener("click", function(){ openModal("submit"); });
+  });
+
+  if(modalForm){
+    modalForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      var title = modalForm.querySelector('input[name="title"]').value.trim();
+      if(!title){
+        showToast("请先填写作品标题");
+        return;
+      }
+      closeModal();
+      showToast("作品信息已提交，感谢你的原创分享");
+      modalForm.reset();
+    });
+  }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById("skTopBtn");
+  window.addEventListener("scroll", function(){
+    if(topBtn) topBtn.classList.toggle("on", window.scrollY > 600);
+  }, {passive:true});
+  if(topBtn) topBtn.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+})();
+</script>
+</body>
+              </html>
